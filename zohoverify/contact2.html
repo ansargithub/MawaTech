@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link your CSS file here -->
+    <script src="script.js" defer></script> <!-- You can link your JavaScript file here -->
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <div class="contact-item">
+            <span>Email:</span>
+            <a href="mailto:contact@example.com">info@mawa.tech</a>
+        </div>
+        <div class="contact-item">
+            <span>Phone:</span>
+            <a href="tel:+(91)9398554501">+919398554501</a>
+        </div>
+        <!-- <div class="social-icons">
+            <span>Follow Us:</span>
+            <a href="https://www.facebook.com/YourPage" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com/YourPage" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/YourPage" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/company/YourPage" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div> -->
+    </section>
+
+    <section class="visit-us">
+        <h2>Visit Us</h2>
+        <address>
+            <p>Madhu Park Enclave,Suncity Road,</p>
+            <p>Hyderabad,India.</p>
+        </address>
+    </section>
+
+    <section class="business-hours">
+        <h2>Business Hours</h2>
+        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+        <p>Saturday: 10:00 AM - 2:00 PM</p>
+        <p>Sunday: Closed</p>
+    </section>
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <!-- Name input-->
+        <div class="form-floating mb-3">
+            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+            <label for="name">Full name</label>
+            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+        </div>
+        <!-- Email address input-->
+        <div class="form-floating mb-3">
+            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+            <label for="email">Email address</label>
+            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+        </div>
+        <!-- Phone number input-->
+        <div class="form-floating mb-3">
+            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+            <label for="phone">Phone number</label>
+            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+        </div>
+        <!-- Message input-->
+        <div class="form-floating mb-3">
+            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+            <label for="message">Message</label>
+            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+        </div>
+        <!-- Submit success message-->
+        <!---->
+        <!-- This is what your users will see when the form-->
+        <!-- has successfully submitted-->
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                To activate this form, sign up at
+                <br />
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <!-- Submit error message-->
+        <!---->
+        <!-- This is what your users will see when there is-->
+        <!-- an error submitting the form-->
+        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+        <!-- Submit Button-->
+        <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+    </form>
+    <section class="contact-form">
+        <h2>Send us a message</h2>
+        <!-- Your contact form HTML code can go here -->
+    </section>
+
+    <footer>
+        <p>Thank you for reaching out to us. We value your feedback and inquiries, and we're excited to assist you in any way we can!</p>
+    </footer>
+</body>
+</html>
